@@ -1,0 +1,38 @@
+{
+    "name": "hyper-vsc",
+    "displayName": "Hyper in VS Code",
+    "description": "Add the Hyper terminal to VS Code's directory context menu",
+    "version": "1.0.0",
+    "publisher": "LevitatingBusinessMan",
+    "engines": {
+        "vscode": "^0.10.5"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.openHyper",
+                "title": "Open Hyper here"
+            }
+        ],
+        "menus": {
+            "explorer/context": [
+                {
+                    "when": "explorerResourceIsFolder",
+                    "command": "extension.openHyper",
+                    "group": "navigation"
+                }
+            ]
+        }
+    },
+    "devDependencies": {
+        "vscode": "^0.10.5"
+    },
+    "license": "MIT"
+}
