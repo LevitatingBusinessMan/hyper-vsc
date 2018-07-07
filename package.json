@@ -4,6 +4,11 @@
     "description": "Add the Hyper terminal to VS Code's directory context menu",
     "version": "1.0.0",
     "publisher": "LevitatingBusinessMan",
+    "icon": "images/Hyper.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/LevitatingBusinessMan/hyper-vsc.git"
+    },
     "engines": {
         "vscode": "^0.10.5"
     },
